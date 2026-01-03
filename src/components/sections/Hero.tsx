@@ -62,6 +62,29 @@ const Hero: React.FC<Props> = ({ onContactClick, onViewProjects }) => {
               Resume
             </a>
           </div>
+
+          {/* ✅ SOCIAL LINKS (VISIBLE & FIXED) */}
+          <div className="flex justify-center md:justify-start gap-6 mt-8 text-2xl text-slate-500">
+            <a
+              href="https://www.linkedin.com/in/abhishekmalviya-"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-elec-blue transition transform hover:scale-110"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="https://github.com/malviyabhishek"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-elec-blue transition transform hover:scale-110"
+              aria-label="GitHub"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+          </div>
         </motion.div>
 
         {/* RIGHT IMAGE + RECTANGLE EXPERIENCE CARD */}
@@ -91,7 +114,6 @@ const Hero: React.FC<Props> = ({ onContactClick, onViewProjects }) => {
               className="absolute -bottom-10 left-1/2 -translate-x-1/2 z-20 w-[260px]"
             >
               <div className="bg-white/95 backdrop-blur-xl border border-slate-200 shadow-xl rounded-lg px-5 py-4">
-                
                 <div className="flex items-center justify-between mb-2">
                   <p className="text-sm font-bold text-slate-900">
                     Professional Experience
